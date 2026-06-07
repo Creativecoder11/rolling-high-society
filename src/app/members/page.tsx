@@ -295,8 +295,6 @@ function MemberDialog({
             </Button>
           </DialogFooter>
         </form>
-
-        {member && <PersonalSessionSection member={member} />}
       </DialogContent>
     </Dialog>
   );
@@ -659,6 +657,8 @@ function MemberDetailDialog({
             <Wallet className="size-4" /> Save payment
           </Button>
         </form>
+
+        {member && <PersonalSessionSection member={member} />}
 
         <div className="space-y-4">
           <div className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
